@@ -300,8 +300,8 @@ function deleteButton(dataId){
         if(authorisatedUser.shopCart[j]== dataId){
             console.log("delete "+authorisatedUser.shopCart[j]);
             authorisatedUser.shopCart.splice(j,1);
-
+            return  showShopCart();
         }
     }
-    showShopCart();
+    
 }
