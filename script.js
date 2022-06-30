@@ -288,7 +288,7 @@ function showShopCart(){
                 '<div class="itemPrice">'+ data.arr[j][1]+ " UAH" +'</div>'+
                 '<div class="itemCount">'+" Count: " + result[j]+ '</div>'+
                 '<div class="deleteButton" id="'+j+'">Delete</div>')
-                totalPrice +=Number(data.arr[j][1]);
+                totalPrice +=Number(data.arr[j][1] * result[j]);
             };
         }
     contentBlock.insertAdjacentHTML('beforeend','<div id="totalPrice">'+totalPrice+" UAH"+'</div>' +'<div id="buyButton">Buy</div>');
